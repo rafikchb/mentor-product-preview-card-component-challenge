@@ -1,0 +1,112 @@
+:root {
+    /* priamry colors   */
+    --clr-primary-cyan: hsl(158, 36%, 37%);
+    --clr-primary-cream: hsl(30, 38%, 92%);
+    /* neutral colors  */
+    --clr-netural-dark-bleu: hsl(212, 21%, 14%);
+    --clr-neutral-grayish-blue: hsl(228, 12%, 48%);
+    --clr-neutral-white: hsl(0, 0%, 100%);
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body{ 
+    padding-top: 100px;
+    height: 100vh;
+    background-color: var(--clr-primary-cream); 
+}
+main {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: auto;
+}
+
+main .main-img {
+    background-image: url(./images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center 46%;
+    background-size: cover;
+    height: 250px;
+    background-color: black;
+}
+
+main>.main-content {
+    padding: 20px 30px;
+}
+
+main>.main-content>.main-tag {
+
+    padding: 15px 0 5px 0;
+    letter-spacing: 0.8em;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--clr-neutral-grayish-blue);
+    font-family: 'Montserrat', sans-serif;
+}
+
+main>.main-content>h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+main>.main-content>p {
+    color: var(--clr-neutral-grayish-blue);
+    line-height: 1.7em;
+    margin-bottom: 20px;
+}
+main > .main-content .prices{ 
+    display: flex; 
+    align-items: center;
+
+}
+main>.main-content .new-price {
+    color: var(--clr-primary-cyan);
+    font-family: 'Fraunces', serif;
+    font-size: 2em;
+}
+
+main>.main-content .old-price {
+    color: var(--clr-neutral-grayish-blue);
+    text-decoration: line-through;
+    vertical-align: center;
+    padding-left: 20px;
+}
+
+main>.main-content>button {
+    display: block;
+    color: var(--clr-primary-cream);
+    background-color: var(--clr-primary-cyan);
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 12px 20px;
+    border-radius: 0.4em;
+    margin: 20px 0 0 0 ;
+}
+
+main>.main-content>button:hover {
+    background-color: hsl(158, 80%, 16%);
+}
+
+@media (min-width: 375px) {
+    main {
+        display: flex;
+        align-items: stretch;
+        max-width: 650px;
+    }
+
+    main > * {
+        flex-basis: 100%;
+    }
+
+    main .main-img {
+       height: auto;
+       background-color: black;
+    }
+
+}
