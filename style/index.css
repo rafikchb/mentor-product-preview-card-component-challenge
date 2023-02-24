@@ -24,7 +24,7 @@ main {
 }
 
 main .main-img {
-    background-image: url(./images/image-product-desktop.jpg);
+    background-image: url(../images/image-product-desktop.jpg);
     background-repeat: no-repeat;
     background-position: center 46%;
     background-size: cover;
@@ -93,13 +93,12 @@ main>.main-content>button:hover {
     background-color: hsl(158, 80%, 16%);
 }
 
-@media (min-width: 375px) {
+@media (min-width: 576px) {
     main {
         display: flex;
         align-items: stretch;
         max-width: 650px;
     }
-
     main > * {
         flex-basis: 100%;
     }
